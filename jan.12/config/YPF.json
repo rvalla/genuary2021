@@ -9,6 +9,5 @@
 	"startDate": "2020-12-31",
 	"endDate": "2020-06-01",
 	"colormap": "seismic",
-	"alpha": 0.5,
 	"background": "20,20,20"
 }

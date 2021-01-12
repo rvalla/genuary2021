@@ -9,6 +9,5 @@
 	"endDate": "2020-01-01",
 	"VolumeDiv": 40000,
 	"colormap": "seismic",
-	"alpha": 0.5,
 	"background": "20,20,20"
 }
