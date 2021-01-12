@@ -5,6 +5,8 @@
 	"height": 9,
 	"resolution": 150,
 	"symbols": "PFE",
+	"startDate": "2020-12-31",
+	"endDate": "2020-01-01",
 	"VolumeDiv": 40000,
 	"colormap": "seismic",
 	"alpha": 0.5,

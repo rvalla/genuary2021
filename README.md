@@ -1,3 +1,5 @@
+![icon](https://gitlab.com/rodrigovalla/genuary2021/-/raw/master/assets/img/logo_64.png)
+
 # genuary 2021
 
 Here I share some of the work I did to be part of [genuary 2021](htps://genuary2021.github.io). It is not all

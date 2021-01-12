@@ -19,6 +19,8 @@ class StockArt():
 		self.colormap = None
 		self.ts = TimeSeries(self.alphakey, output_format='pandas')
 		self.symbols = []
+		self.startDate = None
+		self.endDate = None
 		self.data = []
 		self.metadata = []
 		self.volume = None
@@ -26,14 +28,16 @@ class StockArt():
 		print(self)
 		StockArt.loadStockData(self.data, self.metadata, self.symbols, self.ts)
 		StockArt.scatterArtVol(self.w, self.h, self.resolution, self.background, self.colormap, self.data,
-								self.volume, self.outPath, self.outFile)
+								self.startDate, self.endDate, self.volume, self.outPath, self.outFile)
 
-	def scatterArtVol(w, h, resolution, background, colormap, dataframes, volume, path, filename):
+	def scatterArtVol(w, h, resolution, background, colormap, dataframes, start, end, volume, path, filename):
 		print("-- extracting art from the data...", end="\r")
 		figure = plt.figure(num=None, figsize=(w, h), dpi=resolution, facecolor=background, edgecolor=background)
 		for s in range(len(dataframes)):
-			plt.scatter(x=dataframes[s].index, y=dataframes[s]['4. close'], s=dataframes[s]['5. volume'] / volume, \
-				c=dataframes[s]['4. close']-dataframes[s]['1. open'], cmap=colormap, marker="o")
+			plt.scatter(x=dataframes[s][start:end].index, y=dataframes[s][start:end]['4. close'], \
+						s=dataframes[s][start:end]['5. volume'] / volume, \
+						c=dataframes[s][start:end]['4. close']-dataframes[s][start:end]['1. open'], \
+						cmap=colormap, marker="o")
 		ax = plt.gca()
 		ax.set_facecolor(background)
 		ax.axes.xaxis.set_visible(False)
@@ -59,6 +63,8 @@ class StockArt():
 		self.background = StockArt.getBackground(data)
 		self.colormap = data["colormap"]
 		self.symbols = data["symbols"].split(",")
+		self.startDate = data["startDate"]
+		self.endDate = data["endDate"]
 		self.volume = data["VolumeDiv"]
 
 	def getBackground(data):

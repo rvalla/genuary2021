@@ -1,3 +1,5 @@
+![icon](https://gitlab.com/rodrigovalla/genuary2021/-/raw/master/assets/img/logo_64.png)
+
 # Stock Art
 
 The January 12th prompt was about using an API. I decided to use data from the stock market through
