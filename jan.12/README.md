@@ -27,7 +27,7 @@ You can configure your art using the *.json* file:
 ```json
 {
 	"outPath": "relativeoutputfolder/",
-  "outFile": "outputfilename",
+	"outFile": "outputfilename",
 	"width": 16,
 	"height": 9,
 	"resolution": 150,
