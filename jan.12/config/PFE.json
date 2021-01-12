@@ -1,0 +1,12 @@
+{
+	"outPath": "output/",
+  "outFile": "20210112_Pfizer",
+	"width": 16,
+	"height": 9,
+	"resolution": 150,
+	"symbols": "PFE",
+	"VolumeDiv": 40000,
+	"colormap": "seismic",
+	"alpha": 0.5,
+	"background": "20,20,20"
+}

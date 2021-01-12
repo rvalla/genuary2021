@@ -3,9 +3,9 @@
 Here I share some of the work I did to be part of [genuary 2021](htps://genuary2021.github.io). It is not all
 here because I used tools from other bigger (or not so bigger) projects.  
 
-### some good results
+## some good results
 
-#### Tribute to Mondrian
+### Tribute to Mondrian
 
 A little collaborative homage to the famous dutch painter [Piet Mondrian](https://en.wikipedia.org/wiki/Piet_Mondrian).
 A game was used to collect a set of *Mondrian's strips* which were blended in a canvas using *Interferative* tool from
@@ -15,7 +15,7 @@ A game was used to collect a set of *Mondrian's strips* which were blended in a 
 
 ![mondrian](https://gitlab.com/rodrigovalla/genuary2021/-/raw/master/assets/img/tributetomondrian.jpg)
 
-#### Dice lines
+### Dice lines
 
 The prompt for January 7th was: *generate some rules, then follow them by hand on paper*. I proposed this algorithm:
 

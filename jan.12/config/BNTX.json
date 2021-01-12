@@ -1,0 +1,12 @@
+{
+	"outPath": "output/",
+  "outFile": "20210112_BioNTech",
+	"width": 16,
+	"height": 9,
+	"resolution": 150,
+	"symbols": "BNTX",
+	"VolumeDiv": 8000,
+	"colormap": "seismic",
+	"alpha": 0.5,
+	"background": "20,20,20"
+}

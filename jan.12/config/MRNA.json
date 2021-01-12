@@ -1,0 +1,12 @@
+{
+	"outPath": "output/",
+  "outFile": "20210112_Moderna",
+	"width": 16,
+	"height": 9,
+	"resolution": 150,
+	"symbols": "MRNA",
+	"VolumeDiv": 15000,
+	"colormap": "seismic",
+	"alpha": 0.5,
+	"background": "20,20,20"
+}
