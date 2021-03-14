@@ -3,7 +3,8 @@
 # genuary 2021
 
 Here I share some of the work I did to be part of [genuary 2021](htps://genuary2021.github.io). It is not all
-here because I used tools from other bigger (or not so bigger) projects.  
+here because I used tools from other bigger (or not so bigger) projects. I will share here other some other
+related tools since February 2021.  
 
 ## some good results
 
