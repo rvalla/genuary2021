@@ -6,8 +6,8 @@
 	"resolution": 150,
 	"symbols": "TS",
 	"VolumeDiv": 1500,
-	"startDate": "2020-12-31",
-	"endDate": "2020-01-01",
+	"startDate": "2020-12-01",
+	"endDate": "2021-01-01",
 	"colormap": "seismic",
 	"background": "20,20,20"
 }

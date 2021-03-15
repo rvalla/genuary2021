@@ -34,9 +34,9 @@ class StockArt():
 		print("-- extracting art from the data...", end="\r")
 		figure = plt.figure(num=None, figsize=(w, h), dpi=resolution, facecolor=background, edgecolor=background)
 		for s in range(len(dataframes)):
-			plt.scatter(x=dataframes[s][start:end].index, y=dataframes[s][start:end]['4. close'], \
-						s=dataframes[s][start:end]['5. volume'] / volume, \
-						c=dataframes[s][start:end]['4. close']-dataframes[s][start:end]['1. open'], \
+			plt.scatter(x=dataframes[s][end:start].index, y=dataframes[s][end:start]['4. close'], \
+						s=dataframes[s][end:start]['5. volume'] / volume, \
+						c=dataframes[s][end:start]['4. close']-dataframes[s][end:start]['1. open'], \
 						cmap=colormap, marker="o")
 		ax = plt.gca()
 		ax.set_facecolor(background)
@@ -50,6 +50,7 @@ class StockArt():
 		print("-- loading data from alphavantage...", end="\r")
 		for s in range(len(symbols)):
 			d, m = ts.get_daily(symbol=symbols[s])
+			print(d.shape)
 			data.append(d)
 			metadata.append(m)
 		print("-- data loaded!                       ", end="\n")
